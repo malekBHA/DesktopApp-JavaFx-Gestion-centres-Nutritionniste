@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.AddPublication">
+   <children>
+      <AnchorPane prefHeight="628.0" prefWidth="898.0" >
+         <children>
+            <MFXComboBox fx:id="Type" layoutX="305.0" layoutY="223.0" prefHeight="40.0" prefWidth="244.0" promptText="Type">
+               <stylesheets>
+                  <URL value="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXComboBox.css" />
+                  <URL value="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXComboBoxCell.css" />
+               </stylesheets>
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </MFXComboBox>
+            <MFXTextField fx:id="Image" disable="true" promptText="Image" layoutX="305.0" layoutY="376.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="163.0" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXTextField.css">
+               <styleClass>
+                  <String fx:value="css\MFXTextField.css" />
+                  <String fx:value="floating-text" />
+               </styleClass>
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <Color red="0.250980406999588" green="0.1882352977991104" blue="0.3764705955982208" />
+               </textFill>
+            </MFXTextField>
+            <MFXButton fx:id="AjoutEx" layoutX="362.0" layoutY="574.0" onAction="#AjoutEx" prefHeight="26.0" prefWidth="129.0" rippleColor="WHITE" style="-fx-background-color: #403060; -fx-text-fill: #FFFFFF;" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXButton.css" text="Confirmer" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <Label fx:id="label1" layoutX="120.0" prefHeight="94.0" prefWidth="768.0" text="Ajouter Publication" textAlignment="CENTER" textFill="#403060">
+               <font>
+                  <Font name="Century Gothic Bold" size="72.0" />
+               </font>
+            </Label>
+            <MFXTextField fx:id="Titre" promptText="Titre" layoutX="305.0" layoutY="148.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="244.0" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXTextField.css">
+               <styleClass>
+                  <String fx:value="css\MFXTextField.css" />
+                  <String fx:value="floating-text" />
+               </styleClass>
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <Color red="0.250980406999588" green="0.1882352977991104" blue="0.3764705955982208" />
+               </textFill>
+            </MFXTextField>
+            <MFXButton fx:id="Browse" layoutX="468.0" layoutY="376.0" onAction="#Browse" prefHeight="40.0" prefWidth="80.0" rippleColor="WHITE" style="-fx-background-color: #403060; -fx-text-fill: #FFFFFF;" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXButton.css" text="Parcourir" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXTextField fx:id="Description" promptText="Description" layoutX="305.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="244.0" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXTextField.css">
+               <styleClass>
+                  <String fx:value="css\MFXTextField.css" />
+                  <String fx:value="floating-text" />
+               </styleClass>
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <Color red="0.250980406999588" green="0.1882352977991104" blue="0.3764705955982208" />
+               </textFill>
+            </MFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.ShowPublication">
+   <children>
+      <AnchorPane prefHeight="732.0" prefWidth="926.0">
+         <children>
+
+            <Label layoutX="18.0" layoutY="145.0" style="-fx-font-size: 14pt; -fx-font-weight: bold;" text="Recommended Publications" />
+            <ListView fx:id="recommendedPublicationList" layoutX="21.0" layoutY="172.0" prefHeight="182.0" prefWidth="833.0" style="-fx-background-color: rgba(255,255,255,0.2); -fx-border-radius: 10;">
+               <styleClass>
+                  <String fx:value="list-cell" />
+                  <String fx:value="list-view" />
+               </styleClass>
+            </ListView>
+            <MFXButton fx:id="refreshButton" layoutX="438.0" layoutY="105.0" text="Refresh">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Downloads/png-transparent-computer-icons-refresh-save-miscellaneous-blue-thumbnail-thumbnail-removebg-preview%20(2).png" />
+                     </source>
+                  </ImageInput>
+               </effect></MFXButton>
+
+            <!-- All Posts Label and ListView -->
+            <Label layoutX="18.0" layoutY="354.0" style="-fx-font-size: 14pt; -fx-font-weight: bold;" text="All Posts" />
+            <ListView fx:id="ListPublication" accessibleRole="LIST_ITEM" layoutX="18.0" layoutY="390.0" onMouseClicked="#handleCellClick" prefHeight="265.0" prefWidth="922.0" style="-fx-background-color: rgba(255,255,255,0.2); -fx-border-radius: 10;">
+               <styleClass>
+                  <String fx:value="list-cell" />
+                  <String fx:value="list-view" />
+               </styleClass>
+            </ListView>
+
+            <!-- Other UI Controls -->
+            <ComboBox fx:id="typeComboBox" layoutX="21.0" layoutY="106.0" prefWidth="150.0" />
+            <MFXButton fx:id="likeButton" layoutX="688.0" layoutY="656.0" onAction="#likePublication" prefHeight="38.0" prefWidth="46.0" rippleColor="#403060" style="-fx-background-color: transparent;">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Desktop/session/vitalize/src/main/resources/com/example/vitalize/img/like%20(1).png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </MFXButton>
+
+            <!-- Dislike Button -->
+            <MFXButton fx:id="dislikeButton" layoutX="804.0" layoutY="659.0" onAction="#dislikePublication" prefHeight="0.0" prefWidth="0.0" rippleColor="#403060" style="-fx-background-color: transparent;">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Desktop/session/vitalize/src/main/resources/com/example/vitalize/img/dislike%20(1).png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="16" fitWidth="16" />
+               </graphic>
+            </MFXButton>
+
+            <MFXButton fx:id="Editer" layoutX="154.0" layoutY="668.0" onAction="#Editer" prefHeight="26.0" prefWidth="68.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Editer">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Desktop/integration%20aziz/vitalize/src/main/resources/com/example/vitalize/img/633484-200.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </MFXButton>
+            <MFXButton fx:id="Delete" layoutX="252.0" layoutY="668.0" onAction="#deleteSelectedPublication" prefHeight="17.0" prefWidth="58.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Supprimer">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Desktop/integration%20aziz/vitalize/src/main/resources/com/example/vitalize/img/delete.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </MFXButton>
+
+            <MFXButton fx:id="DeleteCommentaire" layoutX="880.0" layoutY="263.0" onAction="#deleteSelectedCommentaire" prefHeight="17.0" prefWidth="58.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Supprimer">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Desktop/integration%20aziz/vitalize/src/main/resources/com/example/vitalize/img/delete.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </MFXButton>
+
+
+            <MFXButton fx:id="EditCommentaire" layoutX="886.0" layoutY="204.0" onAction="#EditCommentaire" prefHeight="26.0" prefWidth="68.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Editer">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Desktop/integration%20aziz/vitalize/src/main/resources/com/example/vitalize/img/633484-200.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </MFXButton>
+
+
+            
+            <Label fx:id="label1" layoutX="168.0" layoutY="-7.0" prefHeight="94.0" prefWidth="768.0" text="       Publication" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="72.0" />
+               </font>
+            </Label>
+            <MFXButton fx:id="Ajoutp" layoutX="38.0" layoutY="668.0" onAction="#ajoutpass" prefHeight="38.0" prefWidth="112.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Ajouter">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Lenovo-INFOTEC/Desktop/integration%20aziz/vitalize/src/main/resources/com/example/vitalize/img/add.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </MFXButton>
+            <MFXButton fx:id="addCommentButton" layoutX="423.0" layoutY="668.0" onAction="#addCommentButtonClicked" prefHeight="26.0" prefWidth="182.0" rippleColor="#ff4d4d" style="-fx-background-color: #ff4d4d; -fx-text-fill: #ffffff;" text="Add Comment">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+            <TextField fx:id="searchField" layoutX="514.0" layoutY="99.0" prefHeight="38.0" prefWidth="300.0" promptText="Search by Title" />
+            <MFXButton fx:id="searchButton" layoutX="836.0" layoutY="99.0" onAction="#searchByTitle" prefHeight="38.0" prefWidth="100.0" rippleColor="#ff4d4d" style="-fx-background-color: #ff4d4d; -fx-text-fill: #ffffff;" text="Search">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="16" fitWidth="16" layoutX="695.0" layoutY="667.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="530.0" style="-fx-background-color: #EAF6FF;" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.EditerRdv">
+    <children>
+        <DatePicker fx:id="datePicker" layoutX="256.0" layoutY="137.0" prefHeight="32.0" prefWidth="204.0" />
+        <Button fx:id="Update" layoutX="279.0" layoutY="275.0" mnemonicParsing="false" onAction="#UpdateRdv" prefHeight="32.0" prefWidth="71.0" style="-fx-background-color: #14c1a4; -fx-text-fill: #FFFFFF;" text="Update" textFill="#f4eded" />
+        <RadioButton fx:id="inPersonR" layoutX="307.0" layoutY="219.0" mnemonicParsing="false" style="-fx-text-fill: #0022ff;" text="In Person" />
+        <RadioButton fx:id="onlineR" layoutX="138.0" layoutY="219.0" mnemonicParsing="false" style="-fx-text-fill: #0022ff;" text="Online" />
+
+
+        <Text fill="#253cd1" layoutX="-9.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Update\Delete" textAlignment="CENTER" wrappingWidth="530.0">
+            <font>
+                <Font name="BC Arabic Bold" size="24.0" />
+            </font>
+        </Text>
+        <Spinner fx:id="HoursSpinner" layoutX="95.0" layoutY="139.0" prefHeight="28.0" prefWidth="80.0" />
+        <Button fx:id="AppList" layoutX="22.0" layoutY="350.0" mnemonicParsing="false" onAction="#NaviguerRdv" style="-fx-background-color: #2D9CDB; -fx-text-fill: white;" text="Appointments List" />
+        <Button fx:id="DeleteRdv" layoutX="177.0" layoutY="275.0" mnemonicParsing="false" onAction="#DeleteR" prefHeight="32.0" prefWidth="71.0" style="-fx-background-color: #E02020; -fx-text-fill: white;" text="Delete" />
+        <Text layoutX="44.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hour:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="208.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="39.462890625">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f06d241-766b-4430-830d-70e7d108f98d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vitalize/Controlleur/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vitalize/Controlleur/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vitalize/Entity/UserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vitalize/Entity/UserSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vitalize/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vitalize/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vitalize/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vitalize/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vitalize/Header.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vitalize/Header.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vitalize/img/Capture d'écran 2024-04-18 080256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vitalize/img/Capture d'écran 2024-04-18 080309.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vitalize/img/Capture d'écran 2024-04-18 080321.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2fEGN6MZPG6jO5JRKGm2JCU7Wnp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Maven.vitalize [clean].executor": "Run",
+    "Maven.vitalize [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/anes_/OneDrive/Bureau/vitalize/src/main/java/com/example/vitalize",
+    "last_opened_file_path": "C:/Users/Lenovo-INFOTEC/Desktop/session/vitalize",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.vitalize.Controlleur" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.vitalize.HelloApplication" />
+      <module name="vitalize" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.vitalize.Controlleur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f06d241-766b-4430-830d-70e7d108f98d" name="Changes" comment="" />
+      <created>1713358783548</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713358783548</updated>
+      <workItem from="1713358784540" duration="30818000" />
+      <workItem from="1713436832562" duration="6857000" />
+      <workItem from="1713452284216" duration="11548000" />
+      <workItem from="1713725965225" duration="3640000" />
+      <workItem from="1714065315805" duration="1307000" />
+      <workItem from="1714067505377" duration="9778000" />
+      <workItem from="1714084050894" duration="32592000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.AjoutReponse">
+
+   <children>
+      <TextArea fx:id="messageId" layoutX="208.0" layoutY="192.0" prefHeight="291.0" prefWidth="366.0" promptText="message" />
+      <Text layoutX="253.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous pouvez répondre ici">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="279.0" layoutY="497.0" mnemonicParsing="false" onAction="#AjouterReponse" prefHeight="26.0" prefWidth="203.0" text="Envoyer Réponse" />
+      <Button layoutX="28.0" layoutY="29.0" mnemonicParsing="false" onAction="#NavigateToReponses" prefHeight="31.0" prefWidth="152.0" text="Afficher Reponses" />
+      <ComboBox fx:id="ChangerEtatReclamation" layoutX="208.0" layoutY="149.0" prefHeight="28.0" promptText="Changer l'etat de resolution de la reclamation" prefWidth="366.0" />
+
+   </children>
+</AnchorPane>

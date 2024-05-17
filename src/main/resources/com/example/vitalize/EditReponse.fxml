@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.EditReponse">
+    <children>
+        <TextField fx:id="messageTF" layoutX="59.0" layoutY="78.0" prefHeight="26.0" prefWidth="282.0" promptText="Enter Message" />
+        <Button fx:id="saveButton" layoutX="163.0" layoutY="136.0" mnemonicParsing="false" onAction="#editReponse" text="Save" />
+    </children>
+</AnchorPane>

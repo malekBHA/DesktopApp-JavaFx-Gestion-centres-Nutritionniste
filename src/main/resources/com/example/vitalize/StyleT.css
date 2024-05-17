@@ -1,0 +1,24 @@
+/* styles.css */
+.table-view {
+    -fx-base: #FFFFFF;
+    -fx-control-inner-background: #f0f0f0;
+    -fx-background-color: #eaeaea;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: #d3d3d3;
+}
+
+.table-column {
+    -fx-alignment: center-left;
+}
+
+.table-row-cell:filled:selected, .table-row-cell:filled:selected .text {
+    -fx-background-color: #b0c4de;
+    -fx-text-fill: black;
+}
+
+.table-view .column-header-background .label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-padding: 5;
+    -fx-background-color: #f4f4f4;
+}

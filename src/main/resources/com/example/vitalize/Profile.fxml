@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.Profile">
+   <children>
+      <HBox fx:id="box" prefHeight="80.0" prefWidth="800.0" />
+      <TextField fx:id="nom" layoutX="363.0" layoutY="102.0" prefHeight="26.0" prefWidth="242.0" promptText="Nom" style="-fx-border-color: transparent;" />
+      <Label fx:id="nomcc" layoutX="363.0" layoutY="129.0" prefHeight="18.0" prefWidth="242.0" textFill="RED" />
+      <TextField fx:id="prenom" layoutX="363.0" layoutY="147.0" prefHeight="26.0" prefWidth="242.0" promptText="Prenom" style="-fx-border-color: transparent;" />
+      <Label fx:id="prenomcc" layoutX="363.0" layoutY="174.0" prefHeight="18.0" prefWidth="242.0" textFill="RED" />
+      <TextField fx:id="adress" layoutX="363.0" layoutY="192.0" prefHeight="26.0" prefWidth="242.0" promptText="Addresse" style="-fx-border-color: transparent;" />
+      <Label fx:id="adresscc" layoutX="363.0" layoutY="219.0" prefHeight="18.0" prefWidth="242.0" textFill="RED" />
+      <TextField fx:id="tel" layoutX="363.0" layoutY="237.0" prefHeight="26.0" prefWidth="242.0" promptText="Telephone" style="-fx-border-color: transparent;" />
+      <Label fx:id="telcc" layoutX="363.0" layoutY="266.0" prefHeight="18.0" prefWidth="242.0" textFill="RED" />
+      <TextField fx:id="email" layoutX="363.0" layoutY="286.0" prefHeight="26.0" prefWidth="242.0" promptText="Email" style="-fx-border-color: transparent;" />
+      <Label fx:id="emailcc" layoutX="363.0" layoutY="313.0" prefHeight="18.0" prefWidth="242.0" textFill="RED" />
+      <Button fx:id="modbtn" layoutX="353.0" layoutY="409.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="26.0" prefWidth="94.0" style="-fx-background-radius: 60; -fx-background-color: #6d757c;" text="Modifier" textFill="WHITE" />
+      <Label fx:id="modifiercc" layoutX="279.0" layoutY="442.0" prefHeight="18.0" prefWidth="242.0" textFill="RED" />
+   </children>
+</AnchorPane>

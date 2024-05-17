@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TableView?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.RechercheDoctor">
+    <children>
+        <TextField fx:id="searchdoc" layoutX="224.0" layoutY="100.0" onKeyReleased="#search">
+            <effect>
+                <InnerShadow />
+            </effect>
+        </TextField>
+        <TableView fx:id="searchtabdoc" layoutX="21.0" layoutY="163.0" prefHeight="200.0" prefWidth="494.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="nomColumn" prefWidth="75.0" text="Nom" />
+                <TableColumn fx:id="prenomColumn" prefWidth="75.0" text="Prénom" />
+                <TableColumn fx:id="phoneColumn" prefWidth="75.99993896484375" text="Phone" />
+                <TableColumn fx:id="emailColumn" prefWidth="74.4000244140625" text="Email" />
+            </columns>
+        </TableView>
+      <Text fill="#1003ff" layoutX="142.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Search for a Nutritionist Here !">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

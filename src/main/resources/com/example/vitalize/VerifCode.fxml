@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.VerifCode">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="396.0" style="-fx-background-color: #f5f4f4;">
+            <children>
+                <Label layoutX="87.0" layoutY="37.0" text="Inscription" textFill="#6d757c">
+                    <font>
+                        <Font name="System Bold" size="44.0" />
+                    </font>
+                </Label>
+                <Label layoutX="119.0" layoutY="113.0" text="Inscrivez-vous maintenant" textFill="#6d757c" />
+                <Button fx:id="sinscrirebtn" layoutX="147.0" layoutY="153.0" mnemonicParsing="false" onAction="#sinscrire" prefHeight="26.0" prefWidth="82.0" style="-fx-background-radius: 60; -fx-background-color: #6d757c;" text="S'inscrire" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="320.0" fitWidth="240.0" layoutX="78.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/photo1.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="437.0" layoutY="117.0" prefHeight="134.0" prefWidth="311.0" text="Mot de passe oublié" textFill="#6d757c">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <TextField fx:id="email" layoutX="462.0" layoutY="287.0" prefHeight="26.0" prefWidth="266.0" promptText="Votre Email" />
+        <Button fx:id="cnxbtn" layoutX="459.0" layoutY="380.0" mnemonicParsing="false" onAction="#connection" prefHeight="26.0" prefWidth="266.0" style="-fx-background-radius: 60; -fx-background-color: #6d757c;" text="Verifié" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="verifcc" layoutX="459.0" layoutY="327.0" prefHeight="18.0" prefWidth="266.0" textFill="RED" />
+        <Label fx:id="cnxcc" layoutX="462.0" layoutY="420.0" prefHeight="18.0" prefWidth="266.0" textFill="RED" />
+    </children>
+</AnchorPane>

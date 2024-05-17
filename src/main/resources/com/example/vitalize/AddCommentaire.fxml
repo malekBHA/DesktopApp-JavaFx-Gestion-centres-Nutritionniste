@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.AddCommentaire">
+    <children>
+        <AnchorPane prefHeight="628.0" prefWidth="898.0">
+            <children>
+
+                <Label fx:id="label1" layoutX="120.0" prefHeight="94.0" prefWidth="768.0" text="Ajouter Commentaire" textAlignment="CENTER" textFill="#403060">
+                    <font>
+                        <Font name="Century Gothic Bold" size="72.0" />
+                    </font>
+                </Label>
+
+                <MFXButton fx:id="AjoutComment" layoutX="362.0" layoutY="574.0" onAction="#AjoutComment" prefHeight="26.0" prefWidth="129.0" rippleColor="WHITE" style="-fx-background-color: #403060; -fx-text-fill: #FFFFFF;" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXButton.css" text="Confirmer" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                    </font>
+                </MFXButton>
+
+                <MFXTextField fx:id="Contenu" promptText="Contenu" layoutX="305.0" layoutY="137.0"  prefHeight="40.0" prefWidth="244.0" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/MFXTextField.css">
+
+                    <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                    </font>
+
+                </MFXTextField>
+                <MFXTextField fx:id="id_pub" promptText="Post ID" layoutX="305.0" layoutY="202.0" prefHeight="20.0" prefWidth="244.0" disable="true" visible="false" />
+
+
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
+
